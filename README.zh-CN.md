@@ -2,6 +2,8 @@
 
 [English](./README.md)
 
+> 这是二进制发布仓库。源码、目标架构和通知规格维护在 Mox 主源码仓库；本文只说明当前打包版本的部署方式。
+
 MoxPush 是 MoxChat 的自托管远程通知服务。它保存通知身份和设备 token，把 MoxChat 通知事件转发到 APNs，支持普通 alert token 和 PushKit VoIP token，并提供用于投递诊断的运维页面。
 
 ## 发布文件

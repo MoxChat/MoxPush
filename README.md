@@ -2,7 +2,9 @@
 
 [中文文档](./README.zh-CN.md)
 
-MoxPush is the self-hosted remote notification demo service for MoxChat. It stores notification identities and device tokens, relays MoxChat notification events to APNs, supports alert and PushKit VoIP tokens, and exposes an operations page for delivery diagnostics.
+> This is the binary release repository. Source code, target architecture, and notification specifications are maintained in the main Mox source repository. This README documents deployment of the packaged version.
+
+MoxPush is the self-hosted remote notification service for MoxChat. It stores notification identities and device tokens, relays authorized MoxChat notification candidates to APNs, supports alert and PushKit VoIP tokens, and exposes an operations page for delivery diagnostics.
 
 ## Release Files
 
