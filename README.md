@@ -2,8 +2,6 @@
 
 [中文文档](./README.zh-CN.md)
 
-> This is the binary release repository. Source code, target architecture, and notification specifications are maintained in the main Mox source repository. This README documents deployment of the packaged version.
-
 MoxPush is the self-hosted remote notification service for MoxChat. It stores notification identities and device tokens, relays authorized MoxChat notification candidates to APNs, supports alert and PushKit VoIP tokens, and exposes an operations page for delivery diagnostics.
 
 ## Release Files
@@ -47,6 +45,10 @@ MoxPush needs an Apple Developer APNs auth key:
 
 Use the same APNs environment as the client build that registers device tokens.
 Do not publish your `.p8` key or Apple account identifiers in a public release package.
+
+## Notification Privacy
+
+Text notification previews are encrypted by the MoxChat client with the recipient's existing identity public key. MoxPush forwards the opaque `encryptedPreview` envelope and requests a mutable notification; it does not decrypt or generate the preview text. The Notification Service Extension decrypts the envelope on the recipient device. Clients that cannot decrypt the envelope display a generic notification instead.
 
 ## Linux Deployment
 
