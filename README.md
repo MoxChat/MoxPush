@@ -6,6 +6,11 @@ MoxPush is the self-hosted remote notification service for MoxChat. It stores no
 
 Service source code and target specifications are maintained in the main Mox source repository under `spec/notifications/moxpush/`. This repository contains deployment documentation and distributable artifacts only.
 
+## MoxChat Clients
+
+- iOS: [Download on the App Store](https://apps.apple.com/us/app/moxchat/id6775016915)
+- Web: [Open MoxChat](https://app.ponzs.com)
+
 ## Get the Files from GitHub
 
 This repository provides deployment documentation, prebuilt binaries, and Lazycat LPK packages. You do not need Go or a local build. The current package version is `1.3.0`; see [build information](./BUILD-INFO.md) for the source revision and build timestamp, and [SHA256SUMS](./SHA256SUMS) for file digests.
